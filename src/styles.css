@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-color--: #f25454;
+}
+
+.nav {
+  transition: all 0.5s ease;
+}
+.active {
+  color: var(--main-color--);
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a:hover {
+  color: var(--main-color--) !important;
+}
+
+.swap {
+  height: 50px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swap span {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  animation: fadeIn 1s ease-in-out infinite;
+}
+.swap:hover {
+  border: 1px solid #f25454;
+}
+.swap:hover span {
+  background-color: #f25454;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}

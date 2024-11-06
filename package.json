@@ -1,0 +1,12 @@
+{
+  "name": "tailwind-custom-color",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tailwindcss build src/styles.css -o docs/styles.css",
+    "watch": "tailwindcss -i ./src/styles.css -o ./docs/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.4",
+    "tailwindcss": "^2.2.19"
+  }
+}

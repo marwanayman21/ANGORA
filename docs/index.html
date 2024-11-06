@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.primary.default.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <meta name="Author" content="Karim Abdelhalim" />
+    <meta
+      name="keywords"
+      content="HTML5,CSS3,jQuery,Ui/Ux,Graphic,Web,Design,Development"
+    />
+    <title>ANGORA</title>
+  </head>
+
+  <body>
+    <nav class="z-50">
+      <div
+        class="nav h-24 border-b-[0.5px] border-secondary z-50 w-full flex justify-between items-center flex-row fixed top-0 left-0 p-8 md:px-20 text-white"
+      >
+        <img
+          src="https://mahmoudzin.github.io/angora/images/logo-white.png"
+          alt=""
+        />
+        <div class="md:flex md:gap-5 hidden navs font-bold tabs">
+          <a href="#Home">Home</a>
+          <a href="#About">About</a>
+          <a href="#Team"> Team</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Services">Services</a>
+          <a href="#Blog">Blog</a>
+          <a href="#Contact">Contact</a>
+          <div class="flex gap-4 justify-center ml-14">
+            <a href="">
+              <i class="fa-brands text-lg fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands text-lg fa-facebook"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands text-lg fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:hidden flex flex-col">
+          <button
+            class="border-[0.5px] border-secondary px-2 py-1 rounded-[2px] menuBtn flex justify-center items-center"
+          >
+            <i class="fa-solid text-2xl fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex flex-col overflow-hidden text-black md:hidden h-0 z-50 bg-white w-full text-xs text-center gap-2 font-semibold fixed top-24 menu transition-all duration-500 ease-in-out"
+      >
+        <br />
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Team"> Team</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Services">Services</a>
+        <a href="#Blog">Blog</a>
+        <a href="#Contact">Contact</a>
+        <br />
+        <div class="flex gap-4 justify-center">
+          <a href="">
+            <i class="fa-brands md:text-4xl text-xs fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands md:text-4xl text-xs fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands md:text-4xl text-xs fa-instagram"></i>
+          </a>
+        </div>
+        <br />
+      </div>
+    </nav>
+
+    <button
+      class="bg-gray-800 absolute top-52 left-0 px-2 py-1 rounded-ee rounded-tr side-btn z-40"
+    >
+      <i class="fa-solid md:text-base fa-2xs fa-gear text-white"></i>
+    </button>
+
+    <section id="Home" class="h-screen">
+      <div class="absolute bottom-14 left-1/2 -translate-x-1/2 z-50">
+        <a class="swap" href="#about">
+          <span> </span>
+        </a>
+      </div>
+
+      <div class="relative overflow-hidden w[100%] h-screen">
+        <!-- Carousel Inner -->
+        <div class="carousel-inner flex w-full h-full">
+          <!-- Slide  -->
+          <div
+            class="carousel-item min-w-full h-full text-white flex items-center justify-center bg-center bg-cover"
+            style="
+              background-image: url(https://mahmoudzin.github.io/angora/images/slideshow-1.jpg);
+            "
+          >
+            <p
+              class="md:text-[5vw] text-[10vw] text-center md:leading-[7vw] leading-[12vw] w-1/2 font-bold"
+            >
+              We build great brands.
+            </p>
+          </div>
+          <!-- Slide  -->
+          <div
+            class="carousel-item min-w-full h-full text-white flex items-center justify-center bg-center bg-cover"
+            style="
+              background-image: url(https://mahmoudzin.github.io/angora/images/slideshow-2.jpg);
+            "
+          >
+            <p
+              class="md:text-[5vw] text-[10vw] text-center md:leading-[7vw] leading-[12vw] w-1/2 font-bold"
+            >
+              Advanced in digital works.
+            </p>
+          </div>
+          <!-- Slide  -->
+          <div
+            class="carousel-item min-w-full h-full flex items-center justify-center bg-center bg-cover"
+            style="
+              background-image: url(https://mahmoudzin.github.io/angora/images/slideshow-3.jpg);
+            "
+          >
+            <p
+              class="md:text-[5vw] text-[10vw] text-white text-center md:leading-[7vw] leading-[12vw] w-1/2 font-bold"
+            >
+              Focused on strategy.
+            </p>
+          </div>
+        </div>
+        <!-- Prev/Next Controls -->
+        <div
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col"
+        >
+          <button
+            class="text-white h-10 w-10 border-[1px] overflow-hidden group"
+            id="prevBtn"
+          >
+            <i class="fa-solid fa-angle-right group-hover:text-primary"></i>
+            <div
+              class="-z-10 absolute h-10 w-10 bg-white -left-10 top-0 group-hover:left-0 transition-all ease-in-out duration-700"
+            ></div>
+          </button>
+          <button
+            class="text-white h-10 w-10 border-[1px] overflow-hidden group relative"
+            id="nextBtn"
+          >
+            <i class="fa-solid fa-angle-left group-hover:text-primary"></i>
+            <div
+              class="-z-10 absolute h-10 w-10 bg-white -left-10 top-0 group-hover:left-0 transition-all ease-in-out duration-700"
+            ></div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="About">
+      <div class="md:py-10 pt-10 flex flex-col justify-center items-center">
+        <div class="title flex flex-col justify-center items-center group">
+          <div class="relative text-center">
+            <span class="center text-black opacity-10 text-6xl font-bold"
+              >A</span
+            >
+            <h2 class="text-4xl font-bold text-center">About us</h2>
+          </div>
+          <div
+            class="h-[0.5px] mt-2 w-10 bg-black group-hover:w-20 transition-all ease-in-out duration-700"
+          ></div>
+        </div>
+        <p class="md:w-2/3 w-[90%] text-center text-gray-400 md:text-xl mt-6">
+          Pellentesque elementum libero enim, eget gravida nunc laoreet et.
+          Nullam ac enim auctor, fringilla risus at, imperdiet turpis.
+          Pellentesque elementum libero enim.
+        </p>
+        <div
+          class="grid md:grid-cols-5 md:grid-rows-1 grid-rows-2 md:px-20 px-5 mt-12 gap-10"
+        >
+          <div class="flex flex-col gap-5 md:col-span-3 text-secondary">
+            <p class="text-gray">
+              Pellentesque vel elit egestas, pretium est ac, convallis orci.
+              Vivamus sem nisl, tristique vel fringilla vitae, efficitur at
+              eros. Duis aliquet aliquet pharetra. Suspendisse bibendum erat
+              quis gravida pulvinar. Phasellus vel eros porta, blandit dui ac,
+              viverra felis.
+            </p>
+            <p class="text-gray">
+              Nunc placerat iaculis pulvinar. Nullam auctor mauris sed urna
+              posuere volutpat. Mauris ut dui sit amet elit fermentum fermentum.
+              Fusce tincidunt diam at bibendum porta.
+            </p>
+            <p class="text-gray">
+              Aliquam nunc felis, sagittis eu purus non, interdum vehicula urna.
+              Vivamus congue diam sapien, eu pellentesque ipsum ultricies quis.
+            </p>
+          </div>
+          <div class="md:col-span-2 flex flex-col gap-5">
+            <div>
+              <div class="w-[80%] flex justify-between">
+                <p class="mb-2">Branding</p>
+                <p>80%</p>
+              </div>
+              <div class="w-full h-1 bg-gray-100 relative">
+                <div class="w-[80%] h-1 bg-primary"></div>
+              </div>
+            </div>
+            <div>
+              <div class="w-[95%] flex justify-between">
+                <p class="mb-2">Web Design</p>
+                <p>95%</p>
+              </div>
+              <div class="w-full h-1 bg-gray-100 relative">
+                <div class="w-[95%] h-1 bg-primary"></div>
+              </div>
+            </div>
+            <div>
+              <div class="w-[85%] flex justify-between">
+                <p class="mb-2">Graphic Design</p>
+                <p>85%</p>
+              </div>
+              <div class="w-full h-1 bg-gray-100 relative">
+                <div class="w-[85%] h-1 bg-primary"></div>
+              </div>
+            </div>
+            <div>
+              <div class="w-[70%] flex justify-between">
+                <p class="mb-2">Development</p>
+                <p>70%</p>
+              </div>
+              <div class="w-full h-1 bg-gray-100 relative">
+                <div class="w-[70%] h-1 bg-primary"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Team">
+      <div class="md:py-10 flex flex-col justify-center items-center">
+        <div class="title flex flex-col justify-center items-center group">
+          <div class="relative text-center">
+            <span class="center text-black opacity-10 text-6xl font-bold"
+              >O</span
+            >
+            <h2 class="text-4xl font-bold text-center">Our Team</h2>
+          </div>
+          <div
+            class="h-[0.5px] mt-2 w-10 bg-black group-hover:w-20 transition-all ease-in-out duration-700"
+          ></div>
+        </div>
+        <p class="md:w-2/3 w-[90%] text-center text-gray-400 md:text-xl mt-6">
+          Vestibulum ante ipsum primis in faucibus orci. Morbi tincidunt urna
+          imperdiet tincidunt rhoncus. Sed mollis ligula non massa aliquam
+          faucibus.
+        </p>
+        <div
+          class="grid md:grid-cols-4 md:grid-rows-1 grid-rows-4 md:px-20 px-5 mt-12 gap-10"
+        >
+          <div
+            class="flex flex-col justify-center items-center group transition-all ease-in-out"
+          >
+            <div class="overflow-hidden relative">
+              <img
+                src="https://mahmoudzin.github.io/angora/images/member-1.jpg"
+                alt=""
+                class="w-[100vw] group-hover:scale-125 duration-500"
+              />
+              <div
+                class="w-[100vw] h-[200vh] center bg-primary opacity-0 group-hover:opacity-80 flex justify-center items-center gap-4"
+              >
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-twitter"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-facebook"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-linkedin"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-dribbble"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <h3
+              class="mt-5 font-bold text-lg group-hover:text-primary duration-500"
+            >
+              Michael Broad
+            </h3>
+            <p class="text-secondary">Web Designer</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center group transition-all ease-in-out"
+          >
+            <div class="overflow-hidden relative">
+              <img
+                src="https://mahmoudzin.github.io/angora/images/member-2.jpg"
+                alt=""
+                class="w-[100vw] group-hover:scale-125 duration-500"
+              />
+              <div
+                class="w-[100vw] h-[200vh] center bg-primary opacity-0 group-hover:opacity-80 flex justify-center items-center gap-4"
+              >
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-twitter"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-facebook"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-linkedin"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-dribbble"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <h3
+              class="mt-5 font-bold text-lg group-hover:text-primary duration-500"
+            >
+              Jeannette Crow
+            </h3>
+            <p class="text-secondary">CEO Founder</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center group transition-all ease-in-out"
+          >
+            <div class="overflow-hidden relative">
+              <img
+                src="https://mahmoudzin.github.io/angora/images/member-3.jpg"
+                alt=""
+                class="w-[100vw] group-hover:scale-125 duration-500"
+              />
+              <div
+                class="w-[100vw] h-[200vh] center bg-primary opacity-0 group-hover:opacity-80 flex justify-center items-center gap-4"
+              >
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-twitter"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-facebook"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-linkedin"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-dribbble"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <h3
+              class="mt-5 font-bold text-lg group-hover:text-primary duration-500"
+            >
+              Martin Lawrence
+            </h3>
+            <p class="text-secondary">App Developer</p>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center group transition-all ease-in-out"
+          >
+            <div class="overflow-hidden relative">
+              <img
+                src="https://mahmoudzin.github.io/angora/images/member-4.jpg"
+                alt=""
+                class="w-[100vw] group-hover:scale-125 duration-500"
+              />
+              <div
+                class="w-[100vw] h-[200vh] center bg-primary opacity-0 group-hover:opacity-80 flex justify-center items-center gap-4"
+              >
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-twitter"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-facebook"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-linkedin"
+                  ></i>
+                </a>
+                <a href="">
+                  <i
+                    class="fa-brands text-white md:text-2xl text-base fa-dribbble"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <h3
+              class="mt-5 font-bold text-lg group-hover:text-primary duration-500"
+            >
+              Isabella Dowson
+            </h3>
+            <p class="text-secondary">Creative Director</p>
+          </div>
+        </div>
+        <div class="mt-28 w-3/5 flex justify-between items-center">
+          <p class="text-4xl">Do you have any ideas?</p>
+          <button
+            class="py-5 px-6 bg-primary text-white rounded hover:opacity-80 transition-all ease-in-out duration-300"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="Services">
+      <div class="pt-10 flex flex-col justify-center items-center bg-gray-100">
+        <div class="title flex flex-col justify-center items-center group">
+          <div class="relative text-center">
+            <span class="center text-black opacity-10 text-6xl font-bold"
+              >S</span
+            >
+            <h2 class="text-4xl font-bold text-center">Services</h2>
+          </div>
+          <div
+            class="h-[0.5px] mt-2 w-10 bg-black group-hover:w-20 transition-all ease-in-out duration-700"
+          ></div>
+        </div>
+        <p class="md:w-2/3 w-[90%] text-center text-gray-400 md:text-xl mt-6">
+          Nullam ac enim auctor, fringilla risus at, imperdiet turpis.
+          Pellentesque elementum libero enim, eget gravida nunc laoreet et.
+          Pellentesque elementum libero enim.
+        </p>
+        <div
+          class="flex items-center justify-center flex-wrap gap-5 py-20 mx-auto"
+        >
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-display"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Responsive Layout
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-pen-ruler"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Modern Design
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-font-awesome"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Font Awesome Icons
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-envelopes-bulk"></i>
+
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Ajax Portfolio
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-gear"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Color Options
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-headset"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Audio Support
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-file-signature"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Well Documented
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-video"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Background Videos
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+          <div class="md:w-[30vw] sm:w-[45vw] w-[90vw] text-left mb-5 group">
+            <div class="flex justify-start gap-2 items-center">
+              <i class="fa-solid md:text-sm text-primary fa-sliders"></i>
+              <h3
+                class="font-bold text-[18px] group-hover:text-primary transition-all ease-in-out duration-500"
+              >
+                Intro Slider
+              </h3>
+            </div>
+            <p class="text-secondary mt-3 ml-6">
+              Ferri reque integre mea ut, eu eos vide errem noluise se. Putent
+              laoreet et ius utroque dissentias ut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <div class="py-10 flex flex-col justify-center items-center">
+        <div class="title flex flex-col justify-center items-center group">
+          <div class="relative text-center">
+            <span class="center text-black opacity-10 text-6xl font-bold"
+              >C</span
+            >
+            <h2 class="text-4xl font-bold text-center">Client Reviews</h2>
+          </div>
+          <div
+            class="h-[0.5px] mt-2 w-10 bg-black group-hover:w-20 transition-all ease-in-out duration-700"
+          ></div>
+        </div>
+        <p class="md:w-2/3 w-[90%] text-center text-gray-400 md:text-xl mt-6">
+          Donec purus est, tincidunt eu sodales quis, vehicula quis enim. Morbi
+          dapibus, tellus a gravida faucibus, elit ipsum sollicitudin risus, id
+          ultricies arcu neque eget velit.
+        </p>
+        <div class="mt-24 flex flex-col justify-center items-center gap-5">
+          <div class="h-28 w-28 rounded-full overflow-hidden">
+            <img
+              src="https://mahmoudzin.github.io/angora/images/client-3.png"
+              alt=""
+              class="h-full w-full"
+            />
+          </div>
+          <h4 class="text-lg font-semibold">Martin Jack</h4>
+          <h5 class="text-secondary -mt-5">From Hooli</h5>
+          <p class="md:w-2/3 p-2 text-center text-secondary">
+            <span class="text-3xl">❝</span>
+            Aenean sit amet est orci. Aenean at nisi eget nulla lobortis
+            commodo. Nam eget lorem in ex aliquam dapibus.
+            <span class="text-3xl">❞</span>
+          </p>
+          <div class="flex gap-2 mt-5">
+            <span class="h-[3px] w-8 bg-gray-400"></span>
+            <span class="h-[3px] w-8 bg-gray-400"></span>
+            <span class="h-[3px] w-8 bg-gray-400"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact">
+      <div class="pt-10 flex flex-col justify-center items-center bg-gray-100">
+        <div class="title flex flex-col justify-center items-center group">
+          <div class="relative text-center">
+            <span class="center text-black opacity-10 text-6xl font-bold"
+              >G</span
+            >
+            <h2 class="text-4xl font-bold text-center">Get In Touch</h2>
+          </div>
+          <div
+            class="h-[0.5px] mt-2 w-10 bg-black group-hover:w-20 transition-all ease-in-out duration-700"
+          ></div>
+        </div>
+        <p class="md:w-2/3 w-[90%] text-center text-gray-400 md:text-xl mt-6">
+          Mauris at tempus mi, ut iaculis dui. Integer laoreet mattis justo nec
+          pretium. Ut nibh elit, fermentum vel hendrerit vel, dictum nec velit.
+          Morbi volutpat suscipit.
+        </p>
+        <div
+          class="w-full grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 md:p-10"
+        >
+          <div class="w-full p-5 flex flex-col">
+            <h3 class="md:text-4xl text-2xl font-bold">
+              Get answers and advices from professional consultants.
+            </h3>
+            <div
+              class="flex items-center gap-5 py-10 border-b-[1px] border-gray-200 group"
+            >
+              <i class="fa-solid text-5xl text-primary fa-map"></i>
+              <div>
+                <h4
+                  class="text-lg font-semibold group-hover:text-primary duration-300"
+                >
+                  Address
+                </h4>
+                <p class="text-secondary">
+                  1650 Lombard Street, San Francisco, CA 94123
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-5 py-10 group">
+              <i class="fa-solid text-5xl text-primary fa-mobile-screen"></i>
+              <div>
+                <h4
+                  class="text-lg font-semibold group-hover:text-primary duration-300"
+                >
+                  Phone
+                </h4>
+                <p class="text-secondary">
+                  +1 (415) 876-3250 / +1 (415) 876-3251
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-5 py-10 border-t-[1px] border-gray-200 group"
+            >
+              <i class="fa-solid text-5xl text-primary fa-envelope"></i>
+              <div>
+                <h4
+                  class="text-lg font-semibold group-hover:text-primary duration-300"
+                >
+                  Say Hello
+                </h4>
+                <p class="text-secondary">[email protected]</p>
+              </div>
+            </div>
+          </div>
+          <form class="w-full flex flex-col gap-5 mt-12 px-4">
+            <input
+              type="text"
+              placeholder="Name"
+              class="border-[0.5px] border-gray-400 focus:border-4 rounded p-2 h-12"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="border-[0.5px] border-gray-400 focus:border-4 rounded p-2 h-12"
+            />
+
+            <input
+              type="number"
+              placeholder="Phone"
+              class="border-[0.5px] border-gray-400 focus:border-4 rounded p-2 h-12"
+            />
+
+            <textarea
+              placeholder="Message"
+              class="border-[0.5px] border-gray-400 focus:border-4 rounded p-2 h-12"
+            ></textarea>
+            <button
+              class="self-start p-5 bg-primary text-white md:rounded rounded-sm border-2 btn"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div
+        class="w-[100%] bg-cover bg-center relative"
+        style="
+          background-image: url(https://www.dynascan.co.uk/wp-content/uploads/2023/10/AdobeStock_306285929-1.jpeg);
+        "
+      >
+        <div
+          class="bg-black w-full h-full absolute top-0 left-0 opacity-80"
+        ></div>
+        <button
+          class="absolute z-30 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 topBtn rounded-full flex justify-center items-center bg-primary md:p-4 p-2 bottom-28 right-5 transition-all ease-linear duration-700 opacity-80 hover:opacity-100"
+        >
+          <i class="fa-solid fa-chevron-up md:text-xl text-xs text-white"></i>
+        </button>
+        <div class="w-[100%] relative p-10 z-10">
+          <img
+            src="https://mahmoudzin.github.io/angora/images/icon.png"
+            alt=""
+            class="m-auto"
+          />
+
+          <div
+            class="grid gap-10 md:grid-cols-4 md:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 grid-rows-4 md:px-14 py-14"
+          >
+            <div class="flex flex-col gap-5">
+              <h4 class="text-white text-lg font-semibold">Contact Info</h4>
+              <p class="text-white opacity-75 text-sm">
+                1650 Lombard Street, San Francisco, CA 94123
+              </p>
+              <p class="text-white opacity-75 text-sm">
+                +1 (415) 876-3250 [email protected]
+              </p>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h4 class="text-white text-lg font-semibold">Useful Links</h4>
+              <div class="flex flex-col grid-cols-2">
+                <a
+                  href=""
+                  class="text-white opacity-75 text-sm hover:text-primary hover:opacity-100"
+                  >Support</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 text-sm hover:text-primary hover:opacity-100"
+                  >Privacy Policy</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 text-sm hover:text-primary hover:opacity-100"
+                  >Terms & Conditions</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 text-sm hover:text-primary hover:opacity-100"
+                  >Affiliate Program</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 text-sm hover:text-primary hover:opacity-100"
+                  >Careers</a
+                >
+              </div>
+            </div>
+            <div class="flemd:x flex-co text-xsl gap-5">
+              <h4 class="text-white text-lg font-semibold">Recent Posts</h4>
+              <div class="flex flex-col grid-cols-2">
+                <a
+                  href=""
+                  class="text-white opacity-75 md:text-sm text-xs hover:text-primary hover:opacity-100"
+                  >Sunset in Venice</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 md:text-sm text-xs hover:text-primary hover:opacity-100"
+                  >Aerial View of Village</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 md:text-sm text-xs hover:text-primary hover:opacity-100"
+                  >Lighted Concrete City</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 md:text-sm text-xs hover:text-primary hover:opacity-100"
+                  >Affiliate Program</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 md:text-sm text-xs hover:text-primary hover:opacity-100"
+                  >The Little Ghost</a
+                >
+                <a
+                  href=""
+                  class="text-white opacity-75 md:text-sm text-xs hover:text-primary hover:opacity-100"
+                  >Royal Oats ft. Waldo</a
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h4 class="text-white text-lg font-semibold">Recent Posts</h4>
+              <div class="flex flex-wrap gap-2">
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  HTML 5
+                </div>
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  CSS3
+                </div>
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  jQuery
+                </div>
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  Ui/Ux
+                </div>
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  Web
+                </div>
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  Graphic
+                </div>
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  Design
+                </div>
+                <div
+                  class="text-white rounded-sm py-1 px-2 opacity-75 text-sm border-[0.5px] hover:border-primary hover:text-primary hover:opacity-100 cursor-pointer duration-300"
+                >
+                  Development
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#1a1a1a] py-12 md:px-28 px-5 flex justify-between items-center"
+      >
+        <div class="flex md:gap-5 gap-2">
+          <a href="">
+            <i
+              class="fa-brands text-white md:text-base text-xs hover:text-primary fa-twitter"
+            ></i>
+          </a>
+          <a href="">
+            <i
+              class="fa-brands text-white md:text-base text-xs hover:text-primary fa-facebook"
+            ></i>
+          </a>
+          <a href="">
+            <i
+              class="fa-brands text-white md:text-base text-xs hover:text-primary fa-instagram"
+            ></i>
+          </a>
+          <a href="">
+            <i
+              class="fa-brands text-white md:text-base text-xs hover:text-primary fa-dribbble"
+            ></i>
+          </a>
+          <a href="">
+            <i
+              class="fa-brands text-white md:text-base text-xs hover:text-primary fa-pinterest"
+            ></i>
+          </a>
+        </div>
+        <p class="text-white md:text-base text-xs">
+          <span class="opacity-60 text-sm">Copyright © 2020</span> Angora
+        </p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script></script>
+  </body>
+</html>
